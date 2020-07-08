@@ -1,0 +1,1399 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Yu Mincho";}
+@font-face
+	{font-family:"\@Yu Mincho";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	text-align:justify;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	text-align:justify;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=272
+height=272 id="Resim 3" src="Data%20Mining%20Project_dosyalar/image001.jpg"></p>
+
+<p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:48.0pt;line-height:107%;font-family:"Calibri Light",sans-serif'>IE
+425 – Data Mining</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:48.0pt;line-height:107%;font-family:"Calibri Light",sans-serif'>Term
+Project</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:107%;font-family:"Calibri Light",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:22.0pt;line-height:107%;font-family:"Calibri Light",sans-serif'>Instructor:</span></b><span
+style='font-size:22.0pt;line-height:107%;font-family:"Calibri Light",sans-serif'>
+Necati Aras</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:107%;font-family:"Calibri Light",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:22.0pt;line-height:107%;font-family:"Calibri Light",sans-serif'>Prepared
+by:</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:22.0pt;line-height:107%;font-family:"Calibri Light",sans-serif'>Mehmet
+Kubilay Eser     </span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%'>Kobe
+Shots Project Report </span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>The
+project is handled on Rstudio. The code used to predict the shot_made_flag can
+be seen on the Appendix.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt'>Part
+I. Data Analysis</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>Firstly,
+we tried to understand the data set and reveal the relationships among the
+features by considering both training and test sets. In the correlation plot
+below, we can observe the existing correlations in the combined data set of
+training and the test sets. </span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><img
+width=450 height=361 id="Picture 1"
+src="Data%20Mining%20Project_dosyalar/image002.jpg"></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>It
+is clear that lon and loc_x are highly correlated. Also, lat and loc_y are
+highly correlated. Apart from coordinate features, shot distance and
+shot_zone_range_upd are highly correlated. Lastly, lat and loc_y, and
+shot_distance are correlated. Please note that shot distance is the root of sum
+of squares of loc_x and loc_y (i.e. shot_distance = </span><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+position:relative;top:4.5pt'><img width=119 height=25
+src="Data%20Mining%20Project_dosyalar/image003.png"></span><span
+style='font-size:12.0pt'> ). Therefore, we expect some  correlation between
+loc_x and loc_y, and shot_distance. However, loc_y can take values </span><span
+style='font-size:12.0pt'>from a wider range compared to loc_y since a
+basketball court is 25 ft*90ft. Therefore, it is logical that shot distance is
+obviously more correlated with both lat and loc_y.</span></p>
+
+<p class=MsoNormal style='line-height:normal'>
+
+<table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=224 height=10></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=222 height=93
+  src="Data%20Mining%20Project_dosyalar/image004.png"></td>
+ </tr>
+</table>
+
+<span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<br clear=ALL>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><img
+width=335 height=277 id="Picture 31"
+src="Data%20Mining%20Project_dosyalar/image005.jpg"></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>The
+boxplot above represents the relationship between shot_distance and
+shot_zone_range. None of the boxplots overlaps on y_axis. Hence, it is clear
+that  shot_zone_range can be expressed with shot_distance.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>Unlike
+previous correlation plot, the correlation plot below depends only on the
+training set. Therefore, we can also observe the correlation between variables
+shot_made_flag. It seems that there are no linear correlations between the
+variables and shot_made_flag.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><img
+width=446 height=399 id="Picture 24"
+src="Data%20Mining%20Project_dosyalar/image006.jpg"></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>Moreover,
+we also checked out the density plots of the numerical features. Since we
+preprocessed the data set and applied encodings to the categorical and ordinal
+features, we can also obtain information about those features on the below
+density plots (please do not pay attention to the data_type since it only used
+to separate training and test data sets). The plots of Id features such as
+game_event_id, game_id and id are not important since they are only used to
+identify the instances in the data set. As expected, lat and loc_y, and lon and
+loc_x share the same graphs. Unlike loc_x and loc_y, lat and lon features are
+very high values and their changes seems minimal. Therefore,the elimination of
+lat and lon is better instead of deleting loc_x and loc_y.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><img
+width=423 height=349 id="Picture 29"
+src="Data%20Mining%20Project_dosyalar/image007.jpg"></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>For
+categorical features, the balance between levels are checked with the below
+summary() function output. It seems that Jump Shot is the most common
+action_type and it dominates the other action types. The same comment also
+holds for combined_shot_type. In the context of shot_zone_area, Center(C) is
+the dominating level.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><img width=624 height=96
+id="Picture 30" src="Data%20Mining%20Project_dosyalar/image008.jpg"></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>As
+a result,      </span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;line-height:normal'><span
+style='font-size:12.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt'>Since action_type includes more
+than 30 levels, it is not a good idea to use it in the prediction models. We
+will consider combining some levels.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt'>lon and lat can be eliminated
+since they are correlated to loc_x and loc_y. Keep only loc_x and loc_y.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;line-height:normal'><span
+style='font-size:12.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt'>shot_zone_range_upd (encoded version
+of shot_zone_range) can be eliminated as long as shot_distance is kept in the
+data set.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt'>Part
+II. Feature Extraction</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>The
+features extracted are shared below. For detailed calculations, please refer to
+Feature Extraction Part in the APPENDIX.</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;line-height:normal'><span
+style='font-size:12.0pt;font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt'>Create <i>home_game</i> feature
+depending on matchup feature.  Then, delete matchup column.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt'>Create <i>time_remaining</i> feature by using
+minutes_remaining and seconds_remaining</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt'>Keep track of 3 pt shot tries in the game / in the
+period. Please note that this feature holds information about previous
+game_event_id’s in each game_id. ( <i>long_shot_utn, long_shot_utn_period)</i> </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt'>Try to represent the Kobe’s motivation in the game/ in
+the period by keeping track of number of shot tries until a spesific
+game_event_id. Please note that this feature holds information about previous
+game_event_id’s in each game_id. (<i>shots_utn,</i></span><i> </i><i><span
+style='font-size:12.0pt'>shots_utn_period</span></i><span style='font-size:
+12.0pt'>)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt'>Represent the overal performance of Kobe in the season.
+Take the average of total number of shots made in the games held in each
+season. (<i>avg_prev_activity</i>)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt'>Create <i>opp_encounter</i> feature to count the
+number of times that Kobe plays against a spesific team so far.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt'>Create <i>action_type_class</i> by combinining levels
+of action_type.  Keep the action_types applied more than 400 times as it is,
+and write the action_type for all the others as “other”.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt'> Create <i>opponent_class </i>by combining levels of
+opponents. Keep the opponents played against more than 1000 times as it is, and
+label all the other teams as “other”.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt'>Create <i>repetition_action </i> feature that shows
+the frequency of <i>action_type </i>in the game up to each game_event_id.
+Please note that this feature holds information about previous game_event_id’s
+in each game_id.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt'>Keep the <i>month </i>info of the game</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;line-height:normal'><span
+style='font-size:12.0pt;font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt'>Re-arrange the levels of <i>period
+</i>by combining the 5th, 6th and 7th periods together.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt'>Part
+III. Model Preparations</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>In
+this part, we split the given training set into new training set and test set
+in order to check the auc value of the model on a labeled test set. Also, we defined
+getROC_AUC function to calculate AUC value given that actual and predicted
+values, and plot_roc function to draw the ROC (The calculations are adapted
+from a comment written on stackoverflow.com, the link is shared in the R code
+beside the function definition.)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>After
+preparations, we planned to work on finding the best RF, XGBoost and
+LogisticRegression models. However, RF and XGBoost provided fairly good
+performances. Therefore, we did not need to apply logistic regression.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt'>Part
+IV. Model Training</span></b></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt;line-height:normal'><b><span
+style='font-size:12.0pt'>a)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:12.0pt'>Random forest (RF)</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>We
+trained RF model with various feature sets and various parameter settings (only
+mtry and ntree) to find out the best model. </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>First,
+we fit a RF model with all features and default parameters. The feature
+importance plot is shown below.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><img
+width=414 height=342 id="Picture 33"
+src="Data%20Mining%20Project_dosyalar/image009.jpg"></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>Depending
+on the importance plot, action_type_class is a highly significant feature.
+Also, location features such as shot_distance, loc_x and loc_y seems
+significant. </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>Moreover,
+some features are very related. For instance, shot_zone_area and
+shot_zone_basic can be implied with loc_x and loc_y. Similarly time remaining
+is already calculated based on minutes_remaining and seconds_remaining. Therefore,
+regardless of their importance scores, we trained another RF model with
+&quot;month&quot;, &quot;season_year&quot;, &quot;home_game&quot;,
+&quot;avg_prev_activity&quot;, &quot;opp_encounter&quot;
+,&quot;action_type_class&quot;,&quot;combined_shot_type&quot;,
+&quot;loc_x&quot;,&quot;loc_y&quot;,&quot;shot_distance&quot;,
+&quot;period&quot;, &quot;time_remaining&quot;, &quot;long_shot_utn&quot;,
+&quot;long_shot_utn_period&quot;, &quot;repetition_action&quot;. We observed
+that the performance decreased by only 0.1 in terms of AUC.  The ROC with
+corresponding AUC can be seen below. </span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><img
+width=414 height=342 id="Picture 34"
+src="Data%20Mining%20Project_dosyalar/image010.jpg"></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>Yet,
+since the presence of &quot;shot_type&quot;,&quot;shot_zone_area&quot; and
+&quot;shot_zone_basic&quot; improved the performance , we added them into the
+model. Then, we played with various parameter configurations. For instance, we
+checked out the model performance when mtry is 3,4,5 and ntree equals to
+500,800,1000. At the end, we found out that the default parameters are okay to
+use since changing parameters do not change the model performance
+significantly.</span></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt;line-height:normal'><b><span
+style='font-size:12.0pt'>b)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:12.0pt'>XGBoost</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>As
+an alternative to RF; we applied XGBoost to predict shot_made_flag on the test
+set. We used the same feature set we used in building RF. However, we fit the
+model several times with different parameter configurations. We changed eta,
+gamma and max_depth parameters. Also, we changed nround and
+early_stopping_rounds parameters although they do not affected the result
+significantly. After several experiments, we decided to use eta = 0.3, gamma =
+0.5 and max_depth = 3 in the final model. </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>The
+ROC obtained from the final xgboost model is shown below. This AUC is the best
+AUC value we obtained so far considering both RF and XGBoost models. </span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><img
+width=414 height=342 id="Picture 35"
+src="Data%20Mining%20Project_dosyalar/image011.jpg"></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+style='font-size:12.0pt'>Also, the feature importance scores are represented
+below. Action_type and combined_shot_type are also very significant in XGBoost
+model.</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><img
+width=516 height=426 id="Picture 36"
+src="Data%20Mining%20Project_dosyalar/image012.jpg"></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt'>PART
+V. Result and Submission</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>We
+observed that XGBoost provided better performance in terms of auc. Yet, we
+submitted results obtained from both RF and XGBoost. Finally, On Kaggle class
+competition, we obtained the highest auc with XGBoost model. Since our
+submission is already located on the top ranks, we did not train another model
+such as logistic regression.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt'>Last
+Comments</span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>In
+order to ensure the model performance, cross_validation could be applied. In
+other words, flagged data could be splitted into training and test sets for 10
+times so that the model would be trained on different data sets and reliability
+of the best model would be provided. However, since the average performance
+obtained by other teams is very similar. Therefore, we believe that cross-validation
+is not a must to depend on our model. </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>Moreover,
+the model performance would be improved further if new informative features
+would be extracted. If the training set included whole game info and the test
+set consisted of upcoming matches, features addressing the time-series property
+of the data set could be more informative.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt'>As
+a result, the model we built could be improved. Still, it seems to provide good
+and reliable predictions. </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:14.0pt'>APPENDIX</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>HOME
+&lt;- &quot;C:/Users/User/Desktop/IE425/Project/&quot;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>setwd(HOME)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>####
+initialization ####</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+style='font-size:10.0pt'>library(data.table)</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+style='font-size:10.0pt'>library(tidyverse)</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+style='font-size:10.0pt'>library(corrplot)</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+style='font-size:10.0pt'>library(stringr)</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+style='font-size:10.0pt'>library(zoo)</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+style='font-size:10.0pt'>#models</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+style='font-size:10.0pt'>library(randomForest)</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+style='font-size:10.0pt'>library(xgboost)</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+style='font-size:10.0pt'>library(caret)</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+style='font-size:10.0pt'>library(stats) #glm for logistic regression</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>####
+Data ####</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>train
+= fread(&quot;kobe-train.csv&quot;)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>test
+= fread(&quot;kobe-test-no-response.csv&quot;)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>ex_submission
+= fread(&quot;kobe-sample-submission.csv&quot;)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>flag_dt
+= train[,.(X,shot_made_flag)]</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>train
+= train[,-c(&quot;shot_made_flag&quot;)]</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe
+= rbind( data.table(train,&quot;data_type&quot; = 1) 
+,data.table(test,&quot;data_type&quot; = 0)) ## test</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>#without
+flag info</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>##</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>head(kobe)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>str(kobe)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe[,V1
+:= NULL] #kobe[V1 != X] # null</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>setnames(kobe,&quot;X&quot;,&quot;id&quot;)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>#na
+check </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>zero_cols
+= colSums(is.na(kobe))</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>zero_cols[zero_cols
+!= 0] ## no NA</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>#unique
+value</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>sapply(kobe,unique)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>#date</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe$game_date
+= as.Date(kobe$game_date, format = &quot;%d.%m.%Y&quot;)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>#
+a = unique(kobe[,.(game_date,game_id)]) </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>#
+a[,.N,.(game_date)][N &gt; 1] # her tarihte tek maç</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>#season</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe$season_year
+= substr(kobe$season, 1,4)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe$season_year
+= as.numeric(kobe$season_year)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe[,c(&quot;team_name&quot;,&quot;team_id&quot;,&quot;season&quot;)
+:= NULL]# unique values and substuitable columns can be deleted</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe[,shot_type
+:= ifelse(shot_type == &quot;3PT Field Goal&quot;,1,0) ]</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>char_cols
+= kobe %&gt;% keep(is.character) %&gt;%
+select(&quot;shot_zone_area&quot;,&quot;shot_zone_basic&quot;,&quot;opponent&quot;,&quot;combined_shot_type&quot;)
+%&gt;% colnames()</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe[,
+(char_cols) := lapply(.SD, as.factor),.SDcols = char_cols]</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>#
+shot_zone encoding</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe[
+shot_zone_range == &quot;Back Court Shot&quot; , shot_zone_range_upd := 0 ]</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe[
+shot_zone_range == &quot;Less Than 8 ft.&quot; , shot_zone_range_upd := 1 ]</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe[
+shot_zone_range == &quot;8-16 ft.&quot; , shot_zone_range_upd := 2 ]</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe[
+shot_zone_range == &quot;16-24 ft.&quot; , shot_zone_range_upd := 3 ]</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe[
+shot_zone_range == &quot;24+ ft.&quot; , shot_zone_range_upd := 4 ]</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe[,shot_zone_range
+:= NULL]</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>#kobe$shot_made_flag
+= as.numeric(kobe$shot_made_flag) </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>#
+for train data, the corr between shot_made_flag and others is checked
+separately and no correlation found.</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>####
+Feature Evaluation ####</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>kobe
+%&gt;% keep(is.numeric) %&gt;% cor() %&gt;%</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'> 
+corrplot::corrplot.mixed(upper = &quot;ellipse&quot;,</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>                          
+lower = &quot;number&quot;,</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>                          
+tl.pos = &quot;lt&quot;,</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>                          
+number.cex = .5,</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>                          
+lower.col = &quot;black&quot;,</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>                          
+tl.cex = 0.7)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>##</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>ggplot(data
+= gather(Filter(is.numeric,kobe)), aes(value)) + # plot value</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'> 
+facet_wrap(~ key, scale = &quot;free&quot; ) + # divide into separate plots by
+key</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'> 
+geom_density(fill = &quot;green&quot;)  + # get density plots</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>labs( title = &quot;Density Graphs&quot;)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe$action_type = as.factor(kobe$action_type)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe %&gt;% keep(is.factor) %&gt;% summary()</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>## shot_zone_range vs shot_distance</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>ggplot(data = kobe, aes(x =
+as.factor(shot_zone_range_upd), y = shot_distance)) + geom_boxplot()</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>ggplot(data = kobe, aes(x = shot_distance, y = loc_y))
++ geom_point()</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>## opponent</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe[,.N,.(opponent)][order(-N)]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>##</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;line-height:107%'>kobe[,c(&quot;lat&quot;,&quot;lon&quot;,&quot;shot_zone_range_upd&quot;):=
+NULL]</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;line-height:107%'>#### Feature
+Extraction ####</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;line-height:107%'># home_game</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe[,home_game := 1]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe[str_which(kobe$matchup, &quot;@&quot;), home_game
+:= 0]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe[,matchup := NULL]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>#remaining_time</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe[, time_remaining := (minutes_remaining*60 +
+seconds_remaining)]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'># 3 pt tries in the game</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe[order(game_event_id), long_shot_utn :=
+(cumsum(shot_type) ) , .(game_id)] # /  (1:.N)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe[order(game_event_id), long_shot_utn_period :=
+(cumsum(shot_type) ) , .(game_id,period)] # /  (1:.N)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'># number of shots until now // # game_heat</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe[order(game_event_id), shots_utn := 1:.N ,
+.(game_id)] # </span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe[order(game_event_id), shots_utn_period := 1:.N ,
+.(game_id,period)] # </span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'># avg of shots in previous games in the season</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>game_perf = kobe[,.N,.(game_id,game_date,season_year)]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>game_perf[order(game_date), avg_prev_activity :=
+(cumsum(N) / (1:.N)),.(season_year) ]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>game_perf[order(game_date), avg_prev_activity :=
+shift(avg_prev_activity,n= 1, type = &quot;lag&quot;),.(season_year) ]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>game_perf[is.na(avg_prev_activity), avg_prev_activity
+:= N]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe = merge(kobe,
+game_perf[,.(game_id,avg_prev_activity)], by = c(&quot;game_id&quot;), all.x =
+TRUE)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>rm(game_perf)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'># daha önce kaç kez bu opponent ile kapıştık in the
+season</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>opp_dt =
+unique(kobe[,.(game_id,game_date,opponent,season_year)])</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>opp_dt[order(game_date), opp_encounter := 1:.N,
+.(opponent,season_year)]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe = merge(kobe, opp_dt[,.(game_id,opp_encounter)],
+by = c(&quot;game_id&quot;), all.x = TRUE)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>rm(opp_dt)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>## classify the action_type</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>action_types = kobe[,.N,.(action_type)][order(-N)]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>action_types[,action_type_class := ifelse(N &gt;
+400,as.character(action_type),&quot;other&quot; )]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>action_types$action_type_class =
+as.factor(action_types$action_type_class)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe =
+merge(kobe,action_types[,.(action_type,action_type_class)], by =
+&quot;action_type&quot;, all.x = TRUE)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>rm(action_types)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>##</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>opponents_list = kobe[,.N,.(opponent)][order(-N)]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>opponents_list[,opponent_class := ifelse(N &gt;
+1000,as.character(opponent),&quot;other&quot; )]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>opponents_list$opponent_class =
+as.factor(opponents_list$opponent_class)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe = merge(kobe,opponents_list[,.(opponent,opponent_class)],
+by = &quot;opponent&quot;, all.x = TRUE)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>rm(opponents_list)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>#repetition of the same action_type in the game</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe[order(game_event_id), repetition_action :=
+1:.N,.(game_id,action_type)]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'># month of the game</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe[,month := month(game_date)]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe[, month := ifelse(month &lt; 10, month +3, month
+- 9)  ] # to keep it as numeric</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'># period</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>kobe[,period := ifelse(period &gt;4, 5, period)]</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>#### Model Preparations ####</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>train_dt = kobe[data_type == 1]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>train_dt = merge(train_dt, flag_dt, by.x =
+&quot;id&quot;, by.y = &quot;X&quot;, all = FALSE     )</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>test_dt = kobe[data_type == 0]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>split_data = function(dt,split_perc){</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  tb_pre = table(dt$shot_made_flag)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  n = round(split_perc*nrow(dt),0)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  tr_idx = sample(1:nrow(dt),n)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  train_flag_dt = dt[tr_idx,]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  test_flag_dt = dt[-tr_idx,]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  tb_after = table(train_flag_dt$shot_made_flag)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  return(list(train_flag_dt,test_flag_dt,tb_pre[1] /
+tb_pre[2],tb_after[1] / tb_after[2] ))</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>}</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>splitted = split_data(train_dt,0.7)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>train_flag_dt = as.data.table(splitted[1])</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>test_flag_dt = as.data.table(splitted[2])</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>splitted[3] ; splitted[4]  # percentages okay</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>test_flags = test_flag_dt[,.(id,shot_made_flag)]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>features = colnames(train_dt)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>features.game =
+c(&quot;playoffs&quot;,&quot;season_year&quot;,&quot;month&quot;,&quot;opponent_class&quot;,&quot;home_game&quot;,&quot;avg_prev_activity&quot;,&quot;opp_encounter&quot;)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>features.shots = c(&quot;action_type_class&quot;,&quot;combined_shot_type&quot;,&quot;shot_type&quot;)
+# action_type</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>features.shotloc =
+c(&quot;loc_x&quot;,&quot;loc_y&quot;,&quot;shot_distance&quot;,&quot;shot_zone_area&quot;,&quot;shot_zone_basic&quot;)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>features.time =
+c(&quot;period&quot;,&quot;minutes_remaining&quot;,&quot;seconds_remaining&quot;,&quot;time_remaining&quot;)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>features.activity =
+c(&quot;long_shot_utn&quot;,&quot;long_shot_utn_period&quot;,&quot;repetition_action&quot;)
+output = &quot;shot_made_flag&quot;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>#### functions ####</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>getROC_AUC = function(probs, true_Y){ # thanks to :
+https://stackoverflow.com/questions/4903092/calculate-auc-in-r</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  probsSort = sort(probs, decreasing = TRUE,
+index.return = TRUE)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  val = unlist(probsSort$x)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  idx = unlist(probsSort$ix)  </span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  roc_y = true_Y[idx];</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  stack_x = cumsum(roc_y == 0)/sum(roc_y == 0)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  stack_y = cumsum(roc_y == 1)/sum(roc_y == 1)      </span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  auc = sum((stack_x[2:length(roc_y)]-stack_x[1:length(roc_y)-1])*stack_y[2:length(roc_y)])</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  return(list(stack_x=stack_x, stack_y=stack_y,
+auc=auc))</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>}</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>plot_roc = function(aList){</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  #aList = getROC_AUC(rf_predict.1$enter,
+rf_predict.1$shot_made_flag)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  stack_x = unlist(aList$stack_x)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  stack_y = unlist(aList$stack_y)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  auc = unlist(aList$auc)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  #plot</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  plot(stack_x, stack_y, type = &quot;l&quot;, col =
+&quot;blue&quot;, xlab = &quot;False Positive Rate&quot;, ylab = &quot;True
+Positive Rate&quot;, main = &quot;ROC&quot;)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  axis(1, seq(0.0,1.0,0.1))</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  axis(2, seq(0.0,1.0,0.1))</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  abline(h=seq(0.0,1.0,0.1), v=seq(0.0,1.0,0.1),
+col=&quot;gray&quot;, lty=3)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  legend(0.7, 0.3, sprintf(&quot;%3.3f&quot;,auc),
+lty=c(1,1), lwd=c(2.5,2.5), col=&quot;blue&quot;, title = &quot;AUC&quot;)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>  #</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>}</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>#### RF Training ####</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>train_flag_dt $shot_made_flag =
+as.factor(train_flag_dt $shot_made_flag)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>str(train_flag_dt )</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>## All included and default</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>features.1 = c(features.game,features.shots,features.shotloc,features.time,features.activity)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>frml.1 &lt;- as.formula(paste(output,&quot; ~ &quot;,
+paste(features.1, collapse= &quot;+&quot;)))</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>Sys.time()</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>rf.fit     = randomForest( frml.1, data = train_flag_dt,
+importance = TRUE)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>Sys.time()</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>rf.predict = cbind(test_flag_dt[,.(id,shot_made_flag)],predict(rf.fit,
+test_flag_dt, type = &quot;prob&quot;))</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>rf.predict[,predicted := ifelse(`0`&gt;`1`, 0,1)]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>aList = getROC_AUC(rf.predict$`1`,
+rf.predict$shot_made_flag)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>auc = unlist(aList$auc)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>plot_roc(aList)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>varImpPlot(rf.fit,type = 1)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>## Best Model</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>features.3 = c(&quot;month&quot;,&quot;season_year&quot;,&quot;home_game&quot;,&quot;avg_prev_activity&quot;,&quot;opp_encounter&quot;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>               
+,&quot;action_type_class&quot;,&quot;combined_shot_type&quot;,&quot;shot_type&quot;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>               
+,&quot;loc_x&quot;,&quot;loc_y&quot;,&quot;shot_distance&quot;,&quot;shot_zone_area&quot;,&quot;shot_zone_basic&quot;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>               
+,&quot;period&quot;,&quot;time_remaining&quot;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>               
+,&quot;long_shot_utn&quot;,&quot;long_shot_utn_period&quot;,&quot;repetition_action&quot;)
+</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>frml.3 &lt;- as.formula(paste(output,&quot; ~ &quot;,
+paste(features.3, collapse= &quot;+&quot;)))</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>Sys.time()</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>rf.fit     = randomForest( frml.3, data = train_flag_dt,
+importance = TRUE)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>Sys.time()</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>rf.predict =
+cbind(test_flag_dt[,.(id,shot_made_flag)],predict(rf.fit, test_flag_dt, type =
+&quot;prob&quot;))</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>rf.predict[,predicted := ifelse(`0`&gt;`1`, 0,1)]</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'> aList
+= getROC_AUC(rf.predict$`1`, rf.predict$shot_made_flag)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>auc = unlist(aList$auc) </span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>plot_roc(aList)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>#### XGBOOST ####</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>features.3 = 
+c(&quot;month&quot;,&quot;season_year&quot;,&quot;home_game&quot;,&quot;avg_prev_activity&quot;,&quot;opp_encounter&quot;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>               
+,&quot;action_type_class&quot;,&quot;combined_shot_type&quot;,&quot;shot_type&quot;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>               
+,&quot;loc_x&quot;,&quot;loc_y&quot;,&quot;shot_distance&quot;,&quot;shot_zone_area&quot;,&quot;shot_zone_basic&quot;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>               
+,&quot;period&quot;,&quot;time_remaining&quot;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>               
+,&quot;long_shot_utn&quot;,&quot;long_shot_utn_period&quot;,&quot;repetition_action&quot;)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>tr_labels = as.numeric(train_flag_dt$shot_made_flag)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>test_labels = as.numeric(test_flag_dt$shot_made_flag)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>## one hot encoding</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>new_tr &lt;- model.matrix(~.+0,data =
+train_flag_dt[,c(features.3),with=F]) </span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>new_ts &lt;- model.matrix(~.+0,data = test_flag_dt[,c(features.3),with=F])</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>dtrain &lt;- xgb.DMatrix(data = new_tr ,label =
+tr_labels) </span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>dtest &lt;- xgb.DMatrix(data = new_ts  ,label =
+test_labels)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>#default parameters</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>params &lt;- list(  booster = &quot;gbtree&quot;,
+eta=0.3, gamma=0.5, max_depth=3, min_child_weight=1, subsample=1,
+colsample_bytree=1</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>               , objective =
+&quot;binary:logistic&quot;,eval_metric = &quot;auc&quot;)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>xgb &lt;- xgb.train(data = dtrain, # the data   </span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>                 nround = 50, # max number of boosting
+iterations</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>                 early_stopping_rounds = 3,</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>                 params = params,</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>                 watchlist =
+list(val=dtest,train=dtrain))</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>   </span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>xgb.predict &lt;- predict(xgb, dtest)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>xgb.predict =
+cbind(test_flag_dt[,.(id,shot_made_flag)],xgb.predict)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>xgb.predict[,predicted := ifelse(xgb.predict&gt;0.5,
+1,0)]</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>aList = getROC_AUC(xgb.predict$xgb.predict,
+xgb.predict$shot_made_flag)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>auc = unlist(aList$auc)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>mat &lt;- xgb.importance (feature_names =
+colnames(new_tr) ,model = xgb)</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>xgb.plot.importance (importance_matrix = mat[1:20])</span></p>
+
+<p class=MsoNormal style='text-indent:4.5pt;line-height:normal'><span
+style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>####
+Submissions ####</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>#RF</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>train_dt$shot_made_flag
+= as.factor(train_dt$shot_made_flag)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>Sys.time()</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>rf.final  
+= randomForest( frml.3, data = train_dt, importance = TRUE)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>Sys.time()</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>rf.predict
+= predict(rf.final, test_dt, type = &quot;prob&quot;)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>rf.result
+= data.table( id = test_dt$id, prediction = rf.predict)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>rf_submission
+= rf.result[,.(shot_id = id,shot_made_flag = prediction.1)] ###</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>fwrite(rf_submission,&quot;rf_submission.csv&quot;)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>##
+XGBoost</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>actaul_tr_labels
+= as.numeric(train_dt$shot_made_flag)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>actual_tr
+&lt;- model.matrix(~.+0,data = train_dt[,c(features.3),with=F])</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>actual_ts
+&lt;- model.matrix(~.+0,data = test_dt[,c(features.3),with=F])</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>dactual_tr
+&lt;- xgb.DMatrix(data = actual_tr ,label = actaul_tr_labels) </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>dactual_ts
+&lt;- xgb.DMatrix(data = actual_ts)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>params
+&lt;- list(  booster = &quot;gbtree&quot;, eta=0.3, gamma=0.5, max_depth=3,
+min_child_weight=1, subsample=1, colsample_bytree=1</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>                
+, objective = &quot;binary:logistic&quot;,eval_metric = &quot;auc&quot;)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>xgb.final
+&lt;- xgb.train(data = dactual_tr, # the data   </span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>                
+nround = 50, # max number of boosting iterations</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>                
+early_stopping_rounds = 3,</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>                
+params = params,</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>                
+watchlist = list(train=dactual_tr))</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>xgb.predict
+&lt;- predict(xgb, actual_ts)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>xgb.submission
+= data.table( shot_id = test_dt$id, shot_made_flag = xgb.predict)</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:10.0pt'>fwrite(xgb.submission,&quot;xgb_submission.csv&quot;)</span></p>
+
+</div>
+
+</body>
+
+</html>
