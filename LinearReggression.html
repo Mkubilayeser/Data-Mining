@@ -1,0 +1,2575 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="LinearReggression_dosyalar/filelist.xml">
+<link rel=Edit-Time-Data href="LinearReggression_dosyalar/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Kubilay ESER</o:Author>
+  <o:LastAuthor>Kubilay ESER</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>65</o:TotalTime>
+  <o:Created>2020-07-08T09:48:00Z</o:Created>
+  <o:LastSaved>2020-07-08T09:48:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2325</o:Words>
+  <o:Characters>13256</o:Characters>
+  <o:Lines>110</o:Lines>
+  <o:Paragraphs>31</o:Paragraphs>
+  <o:CharactersWithSpaces>15550</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="LinearReggression_dosyalar/themedata.thmx">
+<link rel=colorSchemeMapping
+href="LinearReggression_dosyalar/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:162;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;
+	mso-font-charset:162;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:162;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:TR;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:106%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:106%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:106%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:106%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1415784164;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1331340398 67698703 -1438204724 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-weight:bold;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:1519197765;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1244835328 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Normal Tablo";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1028"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Resim_x0020_2" o:spid="_x0000_i1040" type="#_x0000_t75"
+ style='width:238.5pt;height:238.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=318 height=318
+src="LinearReggression_dosyalar/image002.jpg" v:shapes="Resim_x0020_2"><![endif]></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=TR><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=TR
+style='font-size:48.0pt;line-height:107%;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'><span style='mso-spacerun:yes'>  </span>Data <span class=SpellE>Mining</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span class=SpellE><b><span
+lang=TR style='font-size:48.0pt;line-height:107%;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Linear</span></b></span><b><span lang=TR style='font-size:48.0pt;
+line-height:107%;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'> <span
+class=SpellE>Regression</span></span></b><span lang=TR style='font-size:22.0pt;
+line-height:107%;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span class=SpellE><b><span
+lang=TR style='font-size:22.0pt;line-height:107%;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Instructor</span></b></span><b><span lang=TR style='font-size:
+22.0pt;line-height:107%;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'>:</span></b><span
+lang=TR style='font-size:22.0pt;line-height:107%;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'> Necati Aras<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=TR
+style='font-size:22.0pt;line-height:107%;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span class=SpellE><b><span
+lang=TR style='font-size:22.0pt;line-height:107%;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Prepared</span></b></span><b><span lang=TR style='font-size:22.0pt;
+line-height:107%;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'> <span
+class=SpellE>by</span>:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=TR
+style='font-size:22.0pt;line-height:107%;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Mehmet Kubilay Eser </span><span lang=TR style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'><span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><b><span
+lang=TR style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+class=SpellE><b><span lang=TR style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin'>Question</span></b></span><b><span lang=TR style='font-size:12.0pt;
+font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'> 1<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span class=SpellE><span lang=TR
+style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>Consider</span></span><span
+lang=TR style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> the
+“credit.csv” file <span class=SpellE>where</span> <span class=SpellE><b
+style='mso-bidi-font-weight:normal'>balance</b></span> (<span class=SpellE>average</span>
+<span class=SpellE>credit</span> <span class=SpellE>card</span> <span
+class=SpellE>debt</span> <span class=SpellE>for</span> a <span class=SpellE>number</span>
+of <span class=SpellE>individuals</span>) is the <span class=SpellE>output</span>
+<span class=SpellE>attribute</span>. <span class=SpellE>Quantitative</span> <span
+class=SpellE>input</span> <span class=SpellE>attributes</span> <span
+class=SpellE>are</span> <span class=SpellE>age</span>, <span class=SpellE>cards</span>
+(<span class=SpellE>number</span> of <span class=SpellE>credit</span> <span
+class=SpellE>cards</span>), <span class=SpellE>education</span> (<span
+class=SpellE>years</span> of <span class=SpellE>education</span>), <span
+class=SpellE>income</span> (in <span class=SpellE>thousands</span> of <span
+class=SpellE>dollars</span>), limit (<span class=SpellE>credit</span> limit), <span
+class=SpellE>and</span> <span class=SpellE>rating</span> (<span class=SpellE>credit</span>
+<span class=SpellE>rating</span>). <span class=SpellE>Qualitative</span> <span
+class=SpellE>input</span> <span class=SpellE>attributes</span> <span
+class=SpellE>are</span> <span class=SpellE>gender</span>, <span class=SpellE>student</span>,
+<span class=SpellE>married</span>, <span class=SpellE>and</span> <span
+class=SpellE>ethnicity</span> (<span class=SpellE>Caucasian</span>, <span
+class=SpellE>African</span> <span class=SpellE>American</span> <span
+class=SpellE>or</span> <span class=SpellE>Asian</span>).</span><span
+style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'><span style='mso-spacerun:yes'> </span><span
+lang=TR><o:p></o:p></span></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;line-height:normal'><b><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;line-height:normal;mso-list:l0 level2 lfo1'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-bidi-font-family:
+"Times New Roman";mso-bidi-theme-font:minor-bidi'>Using linear regression,
+investigate whether gender has an effect on the credit card balance. What is
+the average credit card debt for males and females?</span><span
+style='font-size:12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;line-height:normal'><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;line-height:normal'><span style='font-size:12.0pt'>Balance
+~ Gender<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_17" o:spid="_x0000_i1039" type="#_x0000_t75" style='width:297pt;
+ height:162.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=396 height=217
+src="LinearReggression_dosyalar/image004.jpg" v:shapes="Resim_x0020_17"><![endif]></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>P_value of F-test of the model
+= 0.6685. High p value means that we fail to reject that mean values of Balance
+w.r.t Gender are same. Therefore, there is no significant difference between
+the mean values of Balance w.r.t Gender. In other words, gender does not have
+an effect on the credit card balance.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>The average credit card debt
+for males: the intercept of the model, that is equals to 509.8031.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>The average credit card debt
+for females: the intercept + coefficient of <span class=SpellE>GenderFemale</span>
+= 529.5362<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level2 lfo1'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><span lang=TR style='font-size:12.0pt;
+line-height:106%;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:TR'><span style='mso-list:Ignore'>b.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><span
+style='font-size:12.0pt;line-height:106%;font-family:"Times New Roman",serif;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>Using linear
+regression, investigate whether ethnicity has an effect on the credit card
+balance. </span><span lang=TR style='font-size:12.0pt;line-height:106%;
+font-family:"Times New Roman",serif;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:TR'><o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;line-height:normal'><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;line-height:normal'><span style='font-size:12.0pt'>Balance
+~ Ethnicity<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_16" o:spid="_x0000_i1038" type="#_x0000_t75" style='width:301.5pt;
+ height:176.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=402 height=235
+src="LinearReggression_dosyalar/image006.jpg" v:shapes="Resim_x0020_16"><![endif]></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>p_value of F-test of the model
+= 0.9575. High p value means that we fail to reject that mean values of Balance
+w.r.t Ethnicity are same. Therefore, there is no significant difference between
+the mean values of Balance w.r.t Ethnicity. In other words, ethnicity does not
+have an effect on the credit card balance.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;line-height:normal;mso-list:l0 level2 lfo1'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>c.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><span
+style='font-size:12.0pt'>We want to investigate whether the effect of income on
+balance is different for a student compared to a non-student. How can we do
+this?<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;line-height:normal'><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;line-height:normal'><span style='font-size:12.0pt'>Balance ~
+Student * Income<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>To investigate whether the
+effect of income on balance is different for a student compared to a
+non-student, the interaction between Student and Income <span class=GramE>should
+be considered</span>.<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_15" o:spid="_x0000_i1037" type="#_x0000_t75" style='width:336.75pt;
+ height:206.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image007.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=449 height=275
+src="LinearReggression_dosyalar/image008.jpg" v:shapes="Resim_x0020_15"><![endif]></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>The interaction term seems to
+be insignificant. Therefore, the effect of income on balance is not different
+for a student compared to a non-student.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>Yet, it would be wiser to look
+at the interaction effect on the graph. The graph below shows that the slopes
+for <span class=SpellE>StudentNo</span> and <span class=SpellE>StudentYes</span>
+are different. However, this difference is because of the large income
+instances. Although they cause difference in slopes, the confidence intervals
+around the blue and orange lines overlaps.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_14" o:spid="_x0000_i1036" type="#_x0000_t75" style='width:309pt;
+ height:261.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=412 height=349
+src="LinearReggression_dosyalar/image010.jpg" v:shapes="Resim_x0020_14"><![endif]></span><span
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;line-height:normal;mso-list:l0 level2 lfo1'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>d.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><span
+class=SpellE><span lang=TR style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:TR'>Perform</span></span><span lang=TR style='font-size:12.0pt;
+font-family:"Times New Roman",serif;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:TR'> <span class=SpellE>linear</span>
+<span class=SpellE>regression</span> <span class=SpellE>first</span> <span
+class=SpellE>only</span> <span class=SpellE>with</span> <span class=SpellE>input</span>
+<span class=SpellE>attributes</span> “<span class=SpellE>age</span>” <span
+class=SpellE>and</span> “limit”, <span class=SpellE>and</span> <span
+class=SpellE>then</span> <span class=SpellE>with</span> <span class=SpellE>only</span>
+“<span class=SpellE>rating</span>” <span class=SpellE>and</span> “limit”. What <span
+class=SpellE>are</span> <span class=SpellE>your</span> <span class=SpellE>conclusions</span>?</span><span
+style='font-size:12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;line-height:normal'><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;line-height:normal'><span style='font-size:12.0pt'>The
+Comparison of the two models<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_13" o:spid="_x0000_i1035" type="#_x0000_t75" style='width:330pt;
+ height:190.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image011.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=440 height=254
+src="LinearReggression_dosyalar/image012.jpg" v:shapes="Resim_x0020_13"><![endif]></span><span
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>Model1 considers Age and Limit
+to estimate Balance. The p value of the F test of the model is quite small.
+Therefore, this model is a valid model. Moreover, since their p values are less
+than 0.05, both Ae and Limit emerge as significant factors.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_12" o:spid="_x0000_i1034" type="#_x0000_t75" style='width:328.5pt;
+ height:192pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image013.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=438 height=256
+src="LinearReggression_dosyalar/image014.jpg" v:shapes="Resim_x0020_12"><![endif]></span><span
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>Model2 considers Rating and
+Limit to estimate Balance. The p value of the F test of the model is quite
+small. Therefore, this model is a valid model. However, p-value corresponding
+to Limit is larger than 0.05. This means that Limit does not have a significant
+effect on Balance when it is considered with Rating. Although one of the
+factors become insignificant, R_squared slightly decreases. This causes a
+suspicion about the correlated factors.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>The correlation between Limit
+and Rating is 0.997. Therefore, p values of the factors are relatively high but
+the R_squared remains almost the same. On the other hand, the correlation
+between Limit and Age is 0.1. Therefore model 1 is more reliable.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-18.0pt;
+line-height:normal;mso-list:l0 level1 lfo1'><![if !supportLists]><b><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span></b><![endif]><b><span style='font-size:12.0pt;font-family:
+"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;line-height:normal'><span
+lang=TR style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-bidi-font-family:
+"Times New Roman";mso-bidi-theme-font:minor-bidi;mso-ansi-language:TR'>East-West
+<span class=SpellE>Airlines</span> is <span class=SpellE>trying</span> <span
+class=SpellE>to</span> <span class=SpellE>learn</span> <span class=SpellE>more</span>
+<span class=SpellE>about</span> <span class=SpellE>its</span> <span
+class=SpellE>customers</span>.<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>Key</span> <span class=SpellE>issues</span> <span class=SpellE>are</span>
+<span class=SpellE>their</span> <span class=SpellE>flying</span> <span
+class=SpellE>patterns</span>, <span class=SpellE>earning</span> <span
+class=SpellE>and</span> <span class=SpellE>use</span> of <span class=SpellE>frequent</span>
+<span class=SpellE>flyer</span> <span class=SpellE>rewards</span>, <span
+class=SpellE>and</span> <span class=SpellE>use</span> of the <span
+class=SpellE>airline</span> <span class=SpellE>credit</span> <span
+class=SpellE>card</span>. The <span class=SpellE>task</span> is <span
+class=SpellE>to</span> <span class=SpellE>identify</span> <span class=SpellE>customer</span>
+<span class=SpellE>segments</span> <span class=SpellE>via</span> <span
+class=SpellE>clustering</span>. The file EastWestAirlines.xlsx <span
+class=SpellE>contains</span> <span class=SpellE>information</span> on 4000 <span
+class=SpellE>passengers</span> <span class=SpellE>who</span> <span
+class=SpellE>belong</span> <span class=SpellE>to</span> an <span class=SpellE>ariline’s</span>
+<span class=SpellE>frequent</span> <span class=SpellE>flier</span> program. <span
+class=SpellE>For</span> <span class=SpellE>each</span> <span class=SpellE>passenger</span>
+the <span class=GramE>data</span> <span class=SpellE>include</span> <span
+class=SpellE>information</span> on <span class=SpellE>their</span> <span
+class=SpellE>mileage</span> <span class=SpellE>history</span> <span
+class=SpellE>and</span> on <span class=SpellE>different</span> <span
+class=SpellE>ways</span> <span class=SpellE>they</span> <span class=SpellE>accrued</span>
+<span class=SpellE>or</span> <span class=SpellE>spent</span> <span
+class=SpellE>miles</span> in the <span class=SpellE>last</span> <span
+class=SpellE>year</span>. The <span class=SpellE>goal</span> is <span
+class=SpellE>to</span> <span class=SpellE>try</span> <span class=SpellE>to</span>
+<span class=SpellE>identify</span> <span class=SpellE>clusters</span> of <span
+class=SpellE>passengers</span> <span class=SpellE>that</span> <span
+class=SpellE>have</span> <span class=SpellE>similar</span> <span class=SpellE>charactersitics</span>
+<span class=SpellE>for</span> the <span class=SpellE>purpose</span> of <span
+class=SpellE>targeting</span> <span class=SpellE>different</span> <span
+class=SpellE>segments</span> <span class=SpellE>for</span> <span class=SpellE>different</span>
+<span class=SpellE>types</span> of <span class=SpellE>mileage</span> <span
+class=SpellE>offers</span></span><b><span style='font-size:12.0pt;font-family:
+"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin'><o:p></o:p></span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;line-height:normal'><b><span
+style='font-size:12.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;text-indent:-18.0pt;line-height:normal;mso-list:l0 level2 lfo1'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><span
+style='font-size:12.0pt'>Apply hierarchical clustering with Euclidean distance
+and complete linkage. How many clusters appear to be appropriate? Use <span
+class=SpellE>silhoutte</span> index<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>I applied hierarchical
+clustering with Euclidean distance and complete linkage.<span
+style='mso-spacerun:yes'>  </span>Dendrogram is shown below.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span lang=TR
+style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_11" o:spid="_x0000_i1033" type="#_x0000_t75" style='width:256.5pt;
+ height:219.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image015.png" o:title=""
+  cropbottom="1039f"/>
+</v:shape><![endif]--><![if !vml]><img width=342 height=293
+src="LinearReggression_dosyalar/image016.jpg" v:shapes="Resim_x0020_11"><![endif]></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;line-height:normal'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>NbClust function is used to
+determine the appropriate number of clusters. We evaluated cluster numbers from
+2 to 10. The best number of clusters appears to be 2 based on average silhouette
+width (value index = 0.8111).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_10" o:spid="_x0000_i1032" type="#_x0000_t75" style='width:285pt;
+ height:28.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image017.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=380 height=38
+src="LinearReggression_dosyalar/image018.jpg" v:shapes="Resim_x0020_10"><![endif]></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:12.0pt'>However</span></span><span
+lang=TR style='font-size:12.0pt'>, <span class=SpellE>while</span> <span
+class=SpellE>cluster</span> 1 has 3995 instances out of 3999, cluster 2 has
+only 4 <span class=GramE>data</span> instances (0.1%). Complete linkage does
+not seem to be a reliable way to split the customers into clusters. Dendrogram
+is very skewed with complete linkage. The left-hand-side addresses only a few
+instances. Therefore, it is very narrow.</span><span style='font-size:12.0pt;
+mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+class=GramE><span style='font-size:12.0pt;mso-ansi-language:EN-US'>Also</span></span><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>, we considered other
+clustering options. When we increase the number of clusters, the size of the
+cluster decreases slowly.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>It is not wise to increase the
+cluster numbers while reducing the size of the most crowded cluster slightly.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_19" o:spid="_x0000_s1027" type="#_x0000_t75" style='position:absolute;
+ left:0;text-align:left;margin-left:0;margin-top:3357.2pt;width:2in;height:223.2pt;
+ z-index:251661312;visibility:visible;mso-wrap-style:square;
+ mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:left;
+ mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:margin;mso-height-relative:margin'>
+ <v:imagedata src="LinearReggression_dosyalar/image019.png" o:title=""/>
+ <w:wrap type="through" side="right" anchorx="margin"/>
+</v:shape><![endif]--><![if !vml]><img width=192 height=298
+src="LinearReggression_dosyalar/image020.jpg" align=left hspace=12 v:shapes="Resim_x0020_19"><![endif]><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;line-height:normal'><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;line-height:normal'><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;line-height:normal'><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>If another linkage measure
+such as Wards. D2 was <span class=GramE>used,</span> it would provide better
+separation between two clusters. Cluster 1 would have 2489 instances while
+cluster 2 would have 1510. Also, its <span class=SpellE>dendrogram</span> seems
+better-<span class=SpellE>splitted</span> than the complete linkage dendrogram.<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_9" o:spid="_x0000_i1031" type="#_x0000_t75" style='width:237.75pt;
+ height:212.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image021.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=317 height=283
+src="LinearReggression_dosyalar/image022.jpg" v:shapes="Resim_x0020_9"><![endif]></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;line-height:normal'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>Yet, we are asked to use
+complete linkage, therefore, we will proceed with hc_cluster and choose 2 as
+the cluster number.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;text-indent:-18.0pt;line-height:normal;mso-list:l0 level2 lfo1'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>b.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><span
+class=SpellE><span lang=TR style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:TR'>Compare</span></span><span lang=TR style='font-size:12.0pt;
+font-family:"Times New Roman",serif;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:TR'> the <span class=SpellE>cluster</span>
+<span class=SpellE>centroids</span> <span class=SpellE>to</span> <span
+class=SpellE>characterize</span> the <span class=SpellE>different</span> <span
+class=SpellE>clusters</span> <span class=SpellE>and</span> <span class=SpellE>try</span>
+<span class=SpellE>to</span> <span class=SpellE>give</span> <span class=SpellE>each</span>
+<span class=SpellE>cluster</span> a <span class=SpellE>label</span>.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_8" o:spid="_x0000_i1030" type="#_x0000_t75" style='width:468pt;
+ height:33.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image023.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=45
+src="LinearReggression_dosyalar/image024.jpg" v:shapes="Resim_x0020_8"><![endif]></span><span
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>Cluster 1 includes generally
+older members but their balance avg is relatively smaller. Cluster 2 includes
+generally younger members but their balance avg is higher. Therefore, cluster 2
+can be named as “fastliveyoungdie&quot;, whereas cluster 1 can be named as
+&quot;oldatheart&quot;. (Note that ID column is n<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-left:0cm;mso-add-space:auto;text-align:
+justify;text-indent:54.0pt;line-height:normal;mso-list:l0 level2 lfo1'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>c.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><span
+class=SpellE><span lang=TR style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:TR'>To</span></span><span lang=TR style='font-size:12.0pt;
+font-family:"Times New Roman",serif;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:TR'> <span class=SpellE>check</span>
+the <span class=SpellE>stability</span> of the <span class=SpellE>clusters</span>,
+<span class=SpellE>remove</span> a <span class=SpellE>random</span> 5% of the <span
+class=GramE>data</span> (<span class=SpellE>by</span> <span class=SpellE>taking</span>
+a <span class=SpellE>random</span> <span class=SpellE>sample</span> of 95% of
+the <span class=SpellE>records</span>, <span class=SpellE>namely</span> 200 <span
+class=SpellE>records</span>), <span class=SpellE>and</span> <span class=SpellE>repeat</span>
+the <span class=SpellE>analysis</span>. <span class=SpellE>Does</span> the <span
+class=SpellE>same</span> <span class=SpellE>picture</span> <span class=SpellE>emerge</span>?
+<span class=SpellE>Use</span> 425 as the <span class=SpellE>seed</span></span><span
+style='font-size:12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span lang=TR
+style='font-size:12.0pt'>2 clusters still seem to be appropriate according to
+NbClust function and silhouette index. Among 200 instances, only one of them is
+labeled as cluster 2 (0.5%). Since all the samples selected belong to cluster
+1, it is expected that at least one of them would be put into different
+cluster.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_7" o:spid="_x0000_i1029" type="#_x0000_t75" style='width:468pt;
+ height:22.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image025.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=30
+src="LinearReggression_dosyalar/image026.jpg" v:shapes="Resim_x0020_7"><![endif]></span><span
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>The drastic difference between
+cluster sizes are still obvious.<span style='mso-spacerun:yes'>  </span>Dendrogram
+is still skewed, as expected. The percentage of the members of rare cluster is
+higher in the smaller set (0.005 &gt; 0.00100025).<span
+style='mso-spacerun:yes'>  </span>As a result, we could say that the same
+picture emerges again.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><i><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>*Note that random sample would
+have been chosen considering the cluster labels. However, since there are only
+4 members out of 3999 in cluster 2, it would not change the current result
+drastically.<o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_6" o:spid="_x0000_i1028" type="#_x0000_t75" style='width:251.25pt;
+ height:224.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image027.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=335 height=299
+src="LinearReggression_dosyalar/image028.jpg" v:shapes="Resim_x0020_6"><![endif]></span><span
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;text-indent:-18.0pt;line-height:normal;mso-list:l0 level2 lfo1'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>d.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><span
+style='font-size:12.0pt'>Use k-means algorithm with the number of clusters you
+found in part (a). Does the same picture emerge?<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>Cluster centroids are shown in
+the below.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_5" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:468.75pt;
+ height:30.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image029.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=625 height=41
+src="LinearReggression_dosyalar/image030.jpg" v:shapes="Resim_x0020_5"><![endif]></span><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>Cluster centroids based on the
+original data is shown below. (Please ignore ID column and cluster column at
+the end).<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_4" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:468pt;
+ height:35.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image031.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=47
+src="LinearReggression_dosyalar/image032.jpg" v:shapes="Resim_x0020_4"><![endif]></span><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="Resim_x0020_18" o:spid="_x0000_s1026" type="#_x0000_t75" style='position:absolute;
+  left:0;text-align:left;margin-left:0;margin-top:64.3pt;width:269.4pt;
+  height:233.45pt;z-index:251660288;visibility:visible;mso-wrap-style:square;
+  mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+  mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
+  mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+  mso-width-relative:page;mso-height-relative:page'>
+  <v:imagedata src="LinearReggression_dosyalar/image033.png" o:title=""/>
+  <w:wrap type="topAndBottom" anchorx="margin"/>
+ </v:shape><![endif]--><![if !vml]><img width=359 height=311
+ src="LinearReggression_dosyalar/image034.jpg" v:shapes="Resim_x0020_18"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span style='font-size:12.0pt;mso-ansi-language:EN-US'>The graph below can only
+explain the about 45% of variance. Yet, it still gives an idea about the
+distribution of the clusters. 2700 out of 3999 is labeled as cluster 1 and 1299
+is assigned to cluster 2. Therefore, we have a different same picture from we
+had in hierarchical clustering.<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;line-height:normal'><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;line-height:normal'><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.0pt;line-height:normal;mso-list:l0 level2 lfo1'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>e.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><span
+style='font-size:12.0pt'>Use k-means algorithm with the number of clusters you
+found in part (a). Does the same picture emerge?<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;mso-add-space:
+auto;text-align:justify;line-height:normal'><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;mso-add-space:auto;
+text-align:justify;line-height:normal'><span style='font-size:12.0pt'>Since the
+difference between the <span class=GramE>number</span> of members of the two
+clusters is highly large in hierarchical clustering, in this part we only
+consider k-means clusters.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='mso-ansi-language:EN-US;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Resim_x0020_3" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:468pt;
+ height:298.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LinearReggression_dosyalar/image035.png" o:title=""
+  cropbottom="954f"/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=398
+src="LinearReggression_dosyalar/image036.jpg" v:shapes="Resim_x0020_3"><![endif]></span><span
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>The above graph shows the main
+differences between clusters (i.e. km_clusters, obtained by k_means) with
+respect to each factor. Light blue boxplots imply the rare class, namely
+cluster 2, whereas dark blue boxplots represent cluster 1.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><span
+style='font-size:12.0pt;mso-ansi-language:EN-US'>Cluster 1 members seem to
+travel less than people in cluster 2. Their enrollment is generally later than
+those in cluster 2. In general, cluster 1 members have not been rewarded
+significantly. Therefore, cluster 1 people may not be motivated to travel with
+East West Airlines or feel loyal to East West Airlines. More importantly,
+cluster 1 members is the majority. Therefore, we would recommend <span
+class=GramE>to focus</span> on members in cluster 1. Since their cc1_miles, cc2_miles
+and cc3_miles values are quite small, the company can consider following a
+strategy to encourage flights bought via freq. flyer credit card, Rewards
+credit card and Small Business credit card. Indeed, if Rewards credit card and
+Small Business credit card are especially focused, not only cluster 1 but also
+cluster 2 can benefit from the offers. Also, based on enrollment day info, specific
+incentives to younger members can be suggested by the airline company so that
+new members (mostly cluster 1) can develop loyalty and sympathy for the airline
+company early.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+14.0pt'>APPENDIX<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt;line-height:normal;
+mso-list:l1 level1 lfo2'><![if !supportLists]><b><span lang=TR
+style='font-size:10.0pt;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
+mso-ansi-language:TR'><span style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b><![endif]><span class=SpellE><b><span lang=TR
+style='font-size:10.0pt;mso-ansi-language:TR'>Question</span></b></span><b><span
+lang=TR style='font-size:10.0pt;mso-ansi-language:TR'> 1<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>library</span></span><span
+lang=TR style='font-size:10.0pt'>(<span class=SpellE><span class=GramE>data.table</span></span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'>HOME &lt;-
+&quot;C:/Users/User/Desktop/IE425/HW3/&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>setwd</span></span><span
+lang=TR style='font-size:10.0pt'>(HOME)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>credit</span></span><span
+lang=TR style='font-size:10.0pt'> = <span class=SpellE>fread</span>(&quot;<span
+class=GramE>credit.csv</span>&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>head</span></span><span
+lang=TR style='font-size:10.0pt'>(<span class=SpellE>credit</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>summary</span></span><span
+lang=TR style='font-size:10.0pt'>(<span class=SpellE>credit</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>str</span></span><span
+lang=TR style='font-size:10.0pt'>(<span class=SpellE>credit</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>credit</span></span><span
+lang=TR style='font-size:10.0pt'>[, ':=' (<span class=SpellE>Gender</span> = <span
+class=SpellE><span class=GramE>as.factor</span></span>(<span class=SpellE>Gender</span>),<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><span style='mso-spacerun:yes'>               </span><span
+class=SpellE>Student</span> = <span class=SpellE><span class=GramE>as.factor</span></span>(<span
+class=SpellE>Student</span>),<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><span style='mso-spacerun:yes'>               </span><span
+class=SpellE>Married</span> = <span class=SpellE><span class=GramE>as.factor</span></span>(<span
+class=SpellE>Married</span>),<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><span style='mso-spacerun:yes'>               </span><span
+class=SpellE>Ethnicity</span> = <span class=SpellE><span class=GramE>as.factor</span></span>(<span
+class=SpellE>Ethnicity</span>))]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>credit</span></span><span
+lang=TR style='font-size:10.0pt'>[, V1 := NULL]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'>#### a ####<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>lm_gender</span></span><span
+lang=TR style='font-size:10.0pt'> = <span class=SpellE>lm</span>(<span
+class=SpellE>Balance</span> ~ <span class=SpellE>Gender</span>, <span
+class=GramE>data</span> = <span class=SpellE>credit</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>summary</span></span><span
+lang=TR style='font-size:10.0pt'>(<span class=SpellE>lm_gender</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'># <span class=SpellE>p_value</span> = 0.6685<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'># <span class=SpellE>high</span> p <span class=SpellE>value</span>
+<span class=SpellE>means</span> <span class=SpellE>that</span> <span
+class=SpellE>we</span> fail <span class=SpellE>to</span> <span class=SpellE>reject</span>
+<span class=SpellE>that</span> <span class=SpellE>mean</span> <span
+class=SpellE>values</span> of <span class=SpellE>Balance</span> w.r.t <span
+class=SpellE>Gender</span> <span class=SpellE>are</span> <span class=SpellE>same</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'># <span class=SpellE>Therefore</span>, <span
+class=SpellE>there</span> is <span class=SpellE>no</span> <span class=SpellE>significant</span>
+<span class=SpellE>difference</span> <span class=SpellE>between</span> the <span
+class=SpellE>mean</span> <span class=SpellE>values</span> of of <span
+class=SpellE>Balance</span> w.r.t <span class=SpellE>Gender</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'># <span class=SpellE>In</span> <span class=SpellE>other</span>
+<span class=SpellE>words</span>, <span class=SpellE>gender</span> <span
+class=SpellE>does</span> not <span class=SpellE>have</span> an <span
+class=SpellE>effect</span> on the <span class=SpellE>credit</span> <span
+class=SpellE>card</span> <span class=SpellE>balance</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'>#the <span class=SpellE>average</span> <span
+class=SpellE>credit</span> <span class=SpellE>card</span> <span class=SpellE>debt</span>
+<span class=SpellE>for</span> <span class=SpellE>males</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>lm_gender$coefficients</span></span><span
+lang=TR style='font-size:10.0pt'>[1] # 509.8031<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'>#the <span class=SpellE>average</span> <span
+class=SpellE>credit</span> <span class=SpellE>card</span> <span class=SpellE>debt</span>
+<span class=SpellE>for</span> <span class=SpellE>females</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>lm_gender$coefficients</span></span><span
+lang=TR style='font-size:10.0pt'>[1] + <span class=SpellE>lm_gender$coefficients</span>[2]
+# 529.5362<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>credit</span></span><span
+lang=TR style='font-size:10.0pt'>[<span class=GramE>,.</span>(<span
+class=SpellE>AverageDebt</span> = <span class=SpellE>mean</span>(<span
+class=SpellE>Balance</span>)),.(<span class=SpellE>Gender</span>)]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'>#<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>Gender</span> <span class=SpellE>AverageDebt</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'>#<span style='mso-spacerun:yes'>   </span>Male<span
+style='mso-spacerun:yes'>    </span>509.8031<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'># <span class=SpellE>Female</span><span
+style='mso-spacerun:yes'>    </span>529.5362<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'>#### b ####<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>lm_eth</span></span><span
+lang=TR style='font-size:10.0pt'> = <span class=SpellE>lm</span>(<span
+class=SpellE>Balance</span> ~ <span class=SpellE>Ethnicity</span>, <span
+class=GramE>data</span> = <span class=SpellE>credit</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>summary</span></span><span
+lang=TR style='font-size:10.0pt'>(<span class=SpellE>lm_eth</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'># <span class=SpellE>p_value</span> = 0.9575<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'># <span class=SpellE>high</span> p <span class=SpellE>value</span>
+<span class=SpellE>means</span> <span class=SpellE>that</span> <span
+class=SpellE>we</span> fail <span class=SpellE>to</span> <span class=SpellE>reject</span>
+<span class=SpellE>that</span> <span class=SpellE>mean</span> <span
+class=SpellE>values</span> of <span class=SpellE>Balance</span> w.r.t <span
+class=SpellE>Ethnicity</span> <span class=SpellE>are</span> <span class=SpellE>same</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'># <span class=SpellE>Therefore</span>, <span
+class=SpellE>there</span> is <span class=SpellE>no</span> <span class=SpellE>significant</span>
+<span class=SpellE>difference</span> <span class=SpellE>between</span> the <span
+class=SpellE>mean</span> <span class=SpellE>values</span> of of <span
+class=SpellE>Balance</span> w.r.t <span class=SpellE>Ethnicity</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'># <span class=SpellE>In</span> <span class=SpellE>other</span>
+<span class=SpellE>words</span>, <span class=SpellE>ethnicity</span> <span
+class=SpellE>does</span> not <span class=SpellE>have</span> an <span
+class=SpellE>effect</span> on the <span class=SpellE>credit</span> <span
+class=SpellE>card</span> <span class=SpellE>balance</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'>#### c ####<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'># <span class=SpellE>To</span> <span class=SpellE>investigate</span>
+<span class=SpellE>whether</span> the <span class=SpellE>effect</span> of <span
+class=SpellE>income</span> on <span class=SpellE>balance</span> is <span
+class=SpellE>different</span> <span class=SpellE>for</span> a <span
+class=SpellE>student</span> <span class=SpellE>compared</span> <span
+class=SpellE>to</span> a <span class=SpellE>non-student</span>,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'># the <span class=SpellE>interaction</span> <span
+class=SpellE>between</span> <span class=SpellE>Student</span> <span
+class=SpellE>and</span> <span class=SpellE>Income</span> <span class=SpellE>should</span>
+be <span class=SpellE>considered</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>lm_student</span></span><span
+lang=TR style='font-size:10.0pt'> = <span class=SpellE>lm</span>(<span
+class=SpellE>Balance</span> ~ <span class=SpellE>Student</span> * <span
+class=SpellE>Income</span>, <span class=GramE>data</span> = <span class=SpellE>credit</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>summary</span></span><span
+lang=TR style='font-size:10.0pt'>(<span class=SpellE>lm_student</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>ggplot</span></span><span
+lang=TR style='font-size:10.0pt'>(<span class=GramE>data</span> = <span
+class=SpellE>credit</span>, <span class=SpellE>aes</span>( x = <span
+class=SpellE>Income</span>, y = <span class=SpellE>Balance</span>, <span
+class=SpellE>group</span> = <span class=SpellE>Student</span>, <span
+class=SpellE>col</span> = <span class=SpellE>Student</span>)) + <span
+class=SpellE>geom_boxplot</span>()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>ggplot</span></span><span
+lang=TR style='font-size:10.0pt'>(<span class=GramE>data</span> = <span
+class=SpellE>credit</span>, <span class=SpellE>aes</span>( x = <span
+class=SpellE>Income</span>, y = <span class=SpellE>Balance</span>, <span
+class=SpellE>group</span> = <span class=SpellE>Student</span>, <span
+class=SpellE>col</span> = <span class=SpellE>Student</span>)) + <span
+class=SpellE>geom_point</span>() + <span class=SpellE>geom_smooth</span>(<span
+class=SpellE>method</span> = &quot;<span class=SpellE>lm</span>&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'>#<span class=SpellE>interact_plot</span>(<span
+class=SpellE>lm_student</span>, <span class=SpellE>pred</span> = <span
+class=SpellE>Balance</span>, <span class=SpellE>modx</span> = <span
+class=SpellE>Student</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'>#### d ####<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'>m1 = <span class=SpellE>lm</span>(<span class=SpellE>Balance</span>
+~ Age + Limit, <span class=GramE>data</span> = <span class=SpellE>credit</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>summary</span></span><span
+lang=TR style='font-size:10.0pt'>(m1)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'># p-Value of F-test : &lt; 2.2e-16<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'># <span class=SpellE>Adjusted</span> R-<span
+class=SpellE>squared</span>: 0.7486 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'>m2 = <span class=SpellE>lm</span>(<span class=SpellE>Balance</span>
+~ <span class=SpellE>Rating</span> + Limit, <span class=GramE>data</span> = <span
+class=SpellE>credit</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>summary</span></span><span
+lang=TR style='font-size:10.0pt'>(m2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>cor</span></span><span
+lang=TR style='font-size:10.0pt'>(<span class=SpellE>credit$Limit</span>, <span
+class=SpellE>credit$Rating</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span
+class=SpellE><span lang=TR style='font-size:10.0pt'>cor</span></span><span
+lang=TR style='font-size:10.0pt'>(<span class=SpellE>credit$Limit</span>, <span
+class=SpellE>credit$Age</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;line-height:normal'><span lang=TR
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt;line-height:normal;
+mso-list:l1 level1 lfo2'><![if !supportLists]><b><span lang=TR
+style='font-size:10.0pt;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
+mso-ansi-language:TR'><span style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b><![endif]><span class=SpellE><b><span lang=TR
+style='font-size:10.0pt;mso-ansi-language:TR'>Question</span></b></span><b><span
+lang=TR style='font-size:10.0pt;mso-ansi-language:TR'> 2<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'>#### <span class=SpellE>Initialization</span> ####<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>library</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE><span class=GramE>data.table</span></span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>library</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>tidyverse</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>require</span></span><span lang=TR style='font-size:
+10.0pt'>(ggplot2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>library</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>cluster</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>library</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>NbClust</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>library</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>caret</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>library</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>factoextra</span>) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>require</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>corrplot</span>) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'>HOME &lt;- &quot;C:/Users/User/Desktop/IE425/</span><span lang=TR> </span><span
+lang=TR style='font-size:10.0pt'>HW3/ &quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>setwd</span></span><span lang=TR style='font-size:
+10.0pt'>(HOME)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>dt</span></span><span lang=TR style='font-size:10.0pt'>
+= <span class=SpellE>fread</span>(&quot;<span class=GramE>EastWestAirlines.csv</span>&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>head</span></span><span lang=TR style='font-size:10.0pt'>(<span
+class=SpellE>dt</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>str</span></span><span lang=TR style='font-size:10.0pt'>(<span
+class=SpellE>dt</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>summary</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>dt</span>) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'>#standardization<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>dt_s</span></span><span lang=TR style='font-size:10.0pt'>
+= <span class=SpellE><span class=GramE>as.data</span>.table</span>(<span
+class=SpellE>scale</span>(<span class=SpellE>dt</span>[,-c(&quot;ID&quot;)],<span
+class=SpellE>center</span> = TRUE, <span class=SpellE>scale</span> = TRUE)) #<span
+class=SpellE>standardization</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>distance</span></span><span lang=TR style='font-size:
+10.0pt'> &lt;- <span class=SpellE>dist</span>(<span class=SpellE>dt_s</span>, <span
+class=SpellE>method</span> = &quot;<span class=SpellE>euclidian</span>&quot;) #
+<span class=SpellE>factoextra</span><span class=GramE>::</span><span
+class=SpellE>get_dist</span>(<span class=SpellE>dt_scaled</span>)<span
+style='mso-spacerun:yes'>  </span>#<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>dt_s</span></span><span lang=TR style='font-size:10.0pt'>
+%&gt;% <span class=SpellE>cor</span>() %&gt;%<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>  </span><span class=SpellE>corrplot</span><span
+class=GramE>::</span><span class=SpellE>corrplot.mixed</span>(<span
+class=SpellE>upper</span> = &quot;<span class=SpellE>ellipse</span>&quot;,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                           </span><span
+class=SpellE>lower</span> = &quot;<span class=SpellE>number</span>&quot;,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                           </span><span
+class=SpellE>tl.pos</span> = &quot;<span class=SpellE>lt</span>&quot;,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                           </span><span
+class=SpellE>number.cex</span> = .5,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                           </span><span
+class=SpellE>lower.col</span> = &quot;<span class=SpellE>black</span>&quot;,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                          </span><span
+style='mso-spacerun:yes'> </span><span class=SpellE>tl.cex</span> = 0.7)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'>#### a ####<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span
+class=GramE><span lang=TR style='font-size:10.0pt'>set.seed</span></span></span><span
+lang=TR style='font-size:10.0pt'>(425)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>hc</span></span><span lang=TR style='font-size:10.0pt'>=<span
+class=SpellE>hclust</span>(<span class=SpellE>distance</span>, <span
+class=SpellE>method</span>=&quot;<span class=SpellE>complete</span>&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>plot</span></span><span lang=TR style='font-size:10.0pt'>(<span
+class=SpellE>hc</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>plot</span></span><span lang=TR style='font-size:10.0pt'>(<span
+class=SpellE><span class=GramE>hc,main</span></span>=&quot;Complete <span
+class=SpellE>Linkage</span>&quot;, <span class=SpellE>xlab</span>=&quot;&quot;,
+<span class=SpellE>cex</span>=.9)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>numComplete</span></span><span lang=TR
+style='font-size:10.0pt'> &lt;- <span class=SpellE>NbClust</span><span
+class=GramE>::</span><span class=SpellE>NbClust</span>(<span class=SpellE>dt_s</span>,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                                </span><span
+class=SpellE>distance</span>=&quot;<span class=SpellE>euclidean</span>&quot;,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                               
+</span>min.nc=2,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                               
+</span>max.nc=10,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                                </span><span
+class=SpellE>method</span>=&quot;<span class=SpellE>complete</span>&quot;,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                                </span><span
+class=SpellE>index</span>=&quot;<span class=SpellE>silhouette</span>&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'>numComplete$Best.nc # 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>numComplete$Best.partition</span></span><span lang=TR
+style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>plot</span></span><span lang=TR style='font-size:10.0pt'>(<span
+class=SpellE>numComplete$<span class=GramE>All.index</span></span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>          </span>#<span class=SpellE>Also</span>,
+<span class=SpellE>code</span> <span class=SpellE>below</span> <span
+class=SpellE>confirms</span> <span class=SpellE>this</span> <span class=SpellE>finding</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>          </span><span class=SpellE>silhou</span>
+= <span class=SpellE><span class=GramE>data.table</span></span>()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>          </span><span class=SpellE>for</span>(i
+in 2:10){<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>            </span><span class=SpellE>ct</span>
+= <span class=SpellE>cutree</span>(<span class=SpellE>hc</span>, k=i)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>            </span><span class=SpellE>silhou</span>
+= <span class=SpellE>rbind</span>(<span class=SpellE>silhou</span>, <span
+class=SpellE><span class=GramE>data.table</span></span>(k = i, <span
+class=SpellE>mean_s</span> = <span class=SpellE>mean</span>(<span class=SpellE>silhouette</span>(<span
+class=SpellE>ct,distance</span>)[,3])))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>   </span><span
+style='mso-spacerun:yes'>       </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>          </span><span class=SpellE>plot</span>(<span
+class=SpellE>silhou</span>, <span class=SpellE>type</span> = &quot;<span
+class=SpellE>line</span>&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>          </span>#<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>hc_cluster</span></span><span lang=TR
+style='font-size:10.0pt'> = <span class=SpellE>cutree</span>(<span
+class=SpellE>hc</span>, k=2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>table</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>hc_cluster</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'># <span class=SpellE>While</span> <span class=SpellE>cluster</span> 1
+has 3995 <span class=SpellE>instances</span> <span class=SpellE>out</span> of
+3999, <span class=SpellE>cluster</span> 2 has <span class=SpellE>only</span> 4 <span
+class=GramE>data</span> <span class=SpellE>instances</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'># Complete <span class=SpellE>linkage</span> is not a <span
+class=SpellE>reliable</span> <span class=SpellE>way</span> <span class=SpellE>to</span>
+<span class=SpellE>split</span> the <span class=SpellE>customers</span> <span
+class=SpellE>into</span> <span class=SpellE>clusters</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>table</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>cutree</span>(<span class=SpellE>hc</span>, k=2))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>table</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>cutree</span>(<span class=SpellE>hc</span>, k=3))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>table</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>cutree</span>(<span class=SpellE>hc</span>, k=4))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>table</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>cutree</span>(<span class=SpellE>hc</span>, k=5))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>table</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>cutree</span>(<span class=SpellE>hc</span>, k=6))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>table</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>cutree</span>(<span class=SpellE>hc</span>, k=7))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'>#<span class=SpellE>When</span> <span class=SpellE>we</span> <span
+class=SpellE>increase</span> the <span class=SpellE>number</span> of <span
+class=SpellE>clusters</span>, the size of <span class=SpellE>th</span> <span
+class=SpellE>cluster</span> <span class=SpellE>decreases</span> <span
+class=SpellE>slowly</span>. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'># <span class=SpellE>It</span> is not <span class=SpellE>wise</span> <span
+class=SpellE>to</span> <span class=SpellE>increase</span> the <span
+class=SpellE>cluster</span> <span class=SpellE>numbers</span> <span
+class=SpellE>while</span> <span class=SpellE>reducing</span> the size of the <span
+class=SpellE>most</span> <span class=SpellE>crowded</span> <span class=SpellE>cluster</span>
+<span class=SpellE>slightly</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>hc_Ward</span></span><span lang=TR style='font-size:
+10.0pt'>=<span class=SpellE>hclust</span>(<span class=SpellE>distance</span>, <span
+class=SpellE>method</span>=&quot;ward.D2&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>plot</span></span><span lang=TR style='font-size:10.0pt'>(<span
+class=SpellE>hc_Ward</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>hc_cluster_w</span></span><span lang=TR
+style='font-size:10.0pt'> = <span class=SpellE>cutree</span>(<span
+class=SpellE>hc_Ward</span>, k=2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>table</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE>hc_cluster_w</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'># <span class=SpellE>If</span> <span class=SpellE>another</span> <span
+class=SpellE>linkage</span> <span class=SpellE>measure</span> <span
+class=SpellE>such</span> as Wards.D2 <span class=SpellE>was</span> <span
+class=SpellE>used</span>, it <span class=SpellE>would</span> <span
+class=SpellE>provide</span> <span class=SpellE>better</span> <span
+class=SpellE>separation</span> <span class=SpellE>between</span> <span
+class=SpellE>two</span> <span class=SpellE>clusters</span>. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'># Yet, <span class=SpellE>we</span> <span class=SpellE>are</span> <span
+class=SpellE>asked</span> <span class=SpellE>to</span> <span class=SpellE>use</span>
+<span class=SpellE>complete</span> <span class=SpellE>linkage</span>, <span
+class=SpellE>therefore</span>, <span class=SpellE>we</span> <span class=SpellE>will</span>
+<span class=SpellE>proceed</span> <span class=SpellE>with</span> <span
+class=SpellE>hc_cluster</span> <span class=SpellE>and</span> <span
+class=SpellE>choose</span> 2 as the <span class=SpellE>cluster</span> <span
+class=SpellE>number</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>dt_c</span></span><span lang=TR style='font-size:10.0pt'>
+= <span class=SpellE>copy</span>(<span class=SpellE>dt</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>dt_c$cluster</span></span><span lang=TR
+style='font-size:10.0pt'> = <span class=SpellE>hc_cluster</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'>#### b ####<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>dt_c</span></span><span lang=TR style='font-size:10.0pt'>[,
+<span class=SpellE>lapply</span>(.SD, <span class=SpellE>mean</span>), <span
+class=SpellE>by</span>=<span class=SpellE>cluster</span>] # <span class=SpellE>centroids</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'># <span class=SpellE>cluster</span> 1 <span class=SpellE>includes</span>
+<span class=SpellE>generally</span> <span class=SpellE>older</span> <span
+class=SpellE>members</span> but <span class=SpellE>their</span> <span
+class=SpellE>balance</span> <span class=SpellE>avg</span> is <span
+class=SpellE>relatively</span> <span class=SpellE>smaller</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'># <span class=SpellE>cluster</span> 2 <span class=SpellE>includes</span>
+<span class=SpellE>generally</span> <span class=SpellE>younger</span> <span
+class=SpellE>members</span> but <span class=SpellE>their</span> <span
+class=SpellE>balance</span> <span class=SpellE>avg</span> is <span
+class=SpellE>higher</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'># <span class=SpellE>Therefore</span>, <span class=SpellE>cluster</span>
+2 can be <span class=SpellE>named</span> as &quot;<span class=SpellE>fastliveyoungdie</span>&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'># <span class=SpellE>cluster</span> 1 can be <span class=SpellE>named</span>
+as &quot;<span class=SpellE>oldatheart</span>&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'> </span>#### c ####<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span
+class=GramE><span lang=TR style='font-size:10.0pt'>set.seed</span></span></span><span
+lang=TR style='font-size:10.0pt'>(425)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>idx</span></span><span lang=TR style='font-size:10.0pt'>
+= <span class=SpellE>sample</span>(1:nrow(<span class=SpellE>dt</span>),
+200,replace=FALSE)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>sample_s</span></span><span lang=TR style='font-size:
+10.0pt'> = <span class=SpellE>dt_s</span>[<span class=SpellE>idx</span>,]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span
+class=GramE><span lang=TR style='font-size:10.0pt'>dist.s</span></span></span><span
+lang=TR style='font-size:10.0pt'> = <span class=SpellE>dist</span>(<span
+class=SpellE>sample_s</span>, <span class=SpellE>method</span> = &quot;<span
+class=SpellE>euclidean</span>&quot;) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span
+class=GramE><span lang=TR style='font-size:10.0pt'>hc.s</span></span></span><span
+lang=TR style='font-size:10.0pt'> &lt;- <span class=SpellE>hclust</span>(<span
+class=SpellE>dist.s</span>, <span class=SpellE>method</span>=&quot;<span
+class=SpellE>complete</span>&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>plot</span></span><span lang=TR style='font-size:10.0pt'>(<span
+class=SpellE><span class=GramE>hc.s</span></span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>numComplete.s</span></span><span lang=TR
+style='font-size:10.0pt'> &lt;- <span class=SpellE>NbClust</span><span
+class=GramE>::</span><span class=SpellE>NbClust</span>(<span class=SpellE>sample_s</span>,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                                </span><span
+class=SpellE>distance</span>=&quot;<span class=SpellE>euclidean</span>&quot;,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                               
+</span>min.nc=2,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                               
+</span>max.nc=10,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                                </span><span
+class=SpellE>method</span>=&quot;<span class=SpellE>complete</span>&quot;,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><span style='mso-spacerun:yes'>                      </span><span
+style='mso-spacerun:yes'>          </span><span class=SpellE>index</span>=&quot;<span
+class=SpellE>silhouette</span>&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'>numComplete.s$Best.nc # 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'>#<span class=SpellE>again</span> <span class=SpellE>two</span> <span
+class=SpellE>clusters</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span
+class=GramE><span lang=TR style='font-size:10.0pt'>hc.s</span></span><span
+lang=TR style='font-size:10.0pt'>_cluster</span></span><span lang=TR
+style='font-size:10.0pt'> = <span class=SpellE>cutree</span>(<span
+class=SpellE>hc.s</span>, k=2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>table</span></span><span lang=TR style='font-size:
+10.0pt'>(<span class=SpellE><span class=GramE>hc.s</span>_cluster</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>sample_c</span></span><span lang=TR style='font-size:
+10.0pt'> = <span class=SpellE>dt_c</span>[<span class=SpellE>idx</span>,]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>sample_c$cluster_new</span></span><span lang=TR
+style='font-size:10.0pt'> = <span class=SpellE><span class=GramE>hc.s</span>_cluster</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>sample_c</span></span><span lang=TR style='font-size:
+10.0pt'>[<span class=SpellE>cluster</span> != <span class=SpellE>cluster_new</span>]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'>#<span class=SpellE>one</span> <span class=SpellE>member</span> of <span
+class=SpellE>cluster</span> 1 <span class=SpellE>becomes</span> <span
+class=SpellE>cluster</span> 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'># but <span class=SpellE>still</span> the <span class=SpellE>drastic</span>
+<span class=SpellE>difference</span> <span class=SpellE>between</span> <span
+class=SpellE>cluster</span> <span class=SpellE>sizes</span> <span class=SpellE>are</span>
+<span class=SpellE>obvious</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'>#### d ####<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=GramE><span lang=TR
+style='font-size:10.0pt'>km</span></span><span lang=TR style='font-size:10.0pt'>
+&lt;- <span class=SpellE>kmeans</span>(<span class=SpellE>dt_s</span>, <span
+class=SpellE>centers</span> = 2, <span class=SpellE>nstart</span> = 30)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=GramE><span lang=TR
+style='font-size:10.0pt'>km</span></span><span lang=TR style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'># Cluster <span class=SpellE>centers</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>view</span></span><span lang=TR style='font-size:10.0pt'>(<span
+class=SpellE>km$centers</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'># Cluster <span class=SpellE>IDs</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span
+class=GramE><span lang=TR style='font-size:10.0pt'>km</span></span><span
+lang=TR style='font-size:10.0pt'>$cluster</span></span><span lang=TR
+style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>km.g</span></span><span lang=TR style='font-size:10.0pt'>
+= <span class=SpellE>eclust</span>(<span class=SpellE>dt_s</span>, &quot;<span
+class=SpellE>kmeans</span>&quot;, k = 2, <span class=SpellE>nstart</span> = 30,
+<span class=SpellE>graph</span> = TRUE)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>fviz_silhouette</span></span><span lang=TR
+style='font-size:10.0pt'>(<span class=SpellE>km.g</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>dt_c$km_cluster</span></span><span lang=TR
+style='font-size:10.0pt'> = <span class=SpellE>km$cluster</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>dt_c</span></span><span lang=TR style='font-size:10.0pt'>[,
+<span class=SpellE>lapply</span>(.SD, <span class=SpellE>mean</span>), <span
+class=SpellE>by</span>=<span class=SpellE>km_cluster</span>] # <span
+class=SpellE>centroids</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>dt_c</span></span><span lang=TR style='font-size:10.0pt'>[<span
+class=GramE>,.</span>N,.(<span class=SpellE>km_cluster</span>)]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span lang=TR style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>cluster_dt</span></span><span lang=TR
+style='font-size:10.0pt'> = <span class=SpellE>melt</span>(<span class=SpellE>dt_c</span>[,-c(&quot;<span
+class=SpellE>cluster</span>&quot;)], <span class=SpellE><span class=GramE>id.vars</span></span>
+= c(&quot;ID&quot;, &quot;<span class=SpellE>km_cluster</span>&quot;))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:normal'><span class=SpellE><span lang=TR
+style='font-size:10.0pt'>ggplot</span></span><span lang=TR style='font-size:
+10.0pt'>(data = <span class=SpellE>cluster_dt</span>, <span class=SpellE>aes</span>(
+y= <span class=SpellE><span class=GramE>value,group</span></span> = <span
+class=SpellE>km_cluster</span>, <span class=SpellE>col</span> = <span
+class=SpellE>km_cluster</span> )) + <span class=SpellE>geom_boxplot</span>() + <span
+class=SpellE>facet_wrap</span>(~<span class=SpellE>variable</span>, <span
+class=SpellE>scale</span> = &quot;<span class=SpellE>free</span>&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=TR><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=TR style='font-size:22.0pt;line-height:107%;
+font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
